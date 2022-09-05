@@ -1,0 +1,81 @@
+---
+title : "Contact Me"
+level : "top"
+sort  : 3 # index page
+layout: default
+---
+# Get in touch!
+
+I can be reached on most social media platforms:
+
+- [Twitter](https://twitter.com/zachary_fetters)
+- [LinkedIn](https://www.linkedin.com/in/zfett)
+- [GitHub](https://github.com/zfett)
+- [Polywork](https://www.polywork.com/fetters)
+- [Product Hunt](https://www.producthunt.com/@zachary_fetters)
+
+I can also be reached via email if you're old skool:
+
+- [My encrypted email](mailto:zachfett@protonmail.com)
+- [My not-so-encrypted email](mailto:zachary.fetters@yahoo.com)
+
+*psst... To keep your messages safe, use my public key before sending to my encrypted email:*
+
+```plaintext
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+WOgaYQtNflraN9bRIkiJ2A==
+=ypxK
+-----END PGP PUBLIC KEY BLOCK-----
+```

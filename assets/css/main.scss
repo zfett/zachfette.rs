@@ -2,8 +2,9 @@
 @import "fonts/fira-code/fira_code.css";
 
 @import "vars";
-
 @import "syntax";
+@import "footer";
+@import "header";
 
 /* element code */
 ::selection {
@@ -33,7 +34,7 @@ body {
     font-size: $size-nor;
     font-weight: 500;
     margin: 4em auto;
-    max-width: 800px;
+    max-width: 950px;
 }
 
 main {
@@ -46,6 +47,7 @@ h1 {
     margin: 0 0 1.5rem 0;
     font-size: $size-xlg;
     text-shadow: $tstyle-embossed;
+    text-align: center;
 }
 
 h2 {
@@ -69,6 +71,8 @@ h4, h5, h6 {
     font-size: $size-nor;
 }
 
+p { line-height: 32px }
+
 a {
     color: $link-normal;
     font-weight: bold;
@@ -77,12 +81,12 @@ a {
 
 a:hover { 
     color: $link-hover;
-    text-decoration: dashed underline $color-blue-0 2px;
+    text-decoration: solid underline $color-blue-0 2px;
 }
 
 a:active { 
     color: $link-active;
-    text-decoration: dashed underline $color-blue-4 2px;
+    text-decoration: solid underline $color-blue-4 2px;
 }
 
 code {
@@ -183,4 +187,86 @@ hr {
     background: $color-slate-1;
     border-radius: 3px;
     box-shadow: $tstyle-embossed;
+}
+
+ul { 
+    list-style: none;
+    margin-left: -22px;
+}
+
+ul li, ol li { 
+    line-height: 32px;
+    font-size: $size-nor;
+}
+
+ul li::before {
+    content: "—";
+    margin: 0 .5em 0 0;
+    font-weight: 800;
+}
+
+ol li::marker,
+ul li::before { color: $color-slate-2 }
+
+blockquote {
+    position: relative;
+    display: block;
+    color: $color-slate-4;
+    font-style: italic;
+    text-align: justify;
+    margin: 1em 2em;
+}
+
+blockquote::after {
+    content: "";
+    width: 75px;
+    height: 100%;
+    min-height: 75px;
+    position: absolute;
+    left: -2em;
+    top: 0;
+    background: url("/assets/img/quote.webp") no-repeat left top/contain;
+}
+
+img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100px;
+    min-height: 100px;
+    margin: 2em auto;
+    user-select: none;
+    pointer-events: none;
+    border-radius: 6px;
+    background: url("/assets/img/checkered-background.webp") repeat center,
+                $color-slate-2;
+    box-shadow: inset 0 8px 16px rgba(0, 0, 0, .3),
+                $tstyle-embossed;
+}
+
+table {
+    position: relative;
+    display: table;
+    max-width: 100%;
+    width: auto;
+    margin: 2em auto;
+    background: url("./assets/img/noise.webp") repeat center/128px $color-slate-6;
+    background-attachment: fixed;
+    color: $color-slate-0;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, .4),
+                $tstyle-embossed;
+    border-spacing: 4px;
+
+    th, td { 
+        padding: 6px 24px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, .01)
+    }
+
+    thead tr { color: $color-slate-2 }
+
+    tbody tr:nth-of-type(odd) { background: rgba(255, 255, 255, .05) }
 }

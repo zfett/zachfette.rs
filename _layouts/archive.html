@@ -18,7 +18,15 @@
     <body>
         {% include header.html %}
         <main id="site-content">
-            {{ content }}
+            <h1>Archive</h1>
+            {% for post in site.posts %}
+            {% assign currentdate = post.date | date: "%Y" %}
+            {% if currentdate != date %}
+                <h2 id="y{{currentdate}}">{{ currentdate }}</h2>
+            {% assign date = currentdate %} 
+            {% endif %}
+            <ul><li><a href="{{ post.url }}">"{{ post.title }}"</a> by {{ post.author }}. <i>Published on {{ post.date | date: "%A, %B %d, %Y" }}</i></li></ul>
+            {% endfor %}
         </main>
         {% include footer.html %}
     </body>

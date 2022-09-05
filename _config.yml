@@ -1,14 +1,30 @@
+title        : "Zach's microSite"
+description  : "Hello, my name is Zachary and I am a indie developer and designer. This is my personal microSite where I very occasionally post my ramblings."
+timezone     : America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+encoding     : utf-8
+language     : en-US # must be in BCP47 syntax. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
+allowCodeCopy: true # if true, allows code in <pre> tags to be copied.
+
+####################################################
+# DO NOT CHANGE UNLESS YOU KNOW WHAT YOU'RE DOING! #
+####################################################
+
+defaults:
+  -
+    scope:
+      path: _posts
+      type: posts
+    values:
+      permalink: /post/:year/:month/:day/:title
+      layout: post
+
+future              : true
 source              : .
 destination         : ./_site
-collections_dir     : .
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
-timezone            : America/New_York
-encoding            : utf-8
-language            : en-US # must be in BCP47 syntax. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
-allowCodeCopy       : true # if true, allows code in <pre> tags to be copied.
 sass:
   sass_dir          : ./assets/css
   implementation    : sass-embedded
