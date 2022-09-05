@@ -1,0 +1,19 @@
+source              : .
+destination         : ./_site
+collections_dir     : .
+plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+timezone            : America/New_York
+encoding            : utf-8
+language            : en-US # must be in BCP47 syntax. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
+allowCodeCopy       : true # if true, allows code in <pre> tags to be copied.
+sass:
+  sass_dir          : ./assets/css
+  implementation    : sass-embedded
+  style             : compressed
+  sourcemap         : always
+collections:
+  posts:
+    output          : true
