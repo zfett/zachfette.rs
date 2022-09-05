@@ -10,7 +10,7 @@ encoding            : utf-8
 language            : en-US # must be in BCP47 syntax. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
 allowCodeCopy       : true # if true, allows code in <pre> tags to be copied.
 sass:
-  sass_dir          : .assets/css
+  sass_dir          : ./assets/css
   implementation    : sass-embedded
   style             : compressed
   sourcemap         : always
