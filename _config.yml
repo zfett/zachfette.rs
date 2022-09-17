@@ -1,3 +1,5 @@
+remote_theme: zfett/mico
+
 title        : "Zach's microSite"
 description  : "Hello, my name is Zachary and I am a indie developer and designer. This is my personal microSite where I very occasionally post my ramblings."
 timezone     : America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
