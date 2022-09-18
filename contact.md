@@ -16,7 +16,7 @@ I can be reached on most social media platforms:
 
 I can also be reached via email if you're old skool:
 
-- [My encrypted email](mailto:zachfett@protonmail.com)
+- [My encrypted email](mailto:hi@zachfette.rs)
 - [My not-so-encrypted email](mailto:zachary.fetters@yahoo.com)
 
 *psst... To keep your messages safe, use my public key before sending to my encrypted email:*
