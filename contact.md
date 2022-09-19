@@ -3,6 +3,7 @@ title : "Contact Me"
 level : "top"
 sort  : 3 # index page
 layout: default
+custom-script: "email-copy.js"
 ---
 # Get in touch!
 
@@ -14,10 +15,11 @@ I can be reached on most social media platforms:
 - [Polywork](https://www.polywork.com/fetters)
 - [Product Hunt](https://www.producthunt.com/@zachary_fetters)
 
-I can also be reached via email if you're old skool:
+I can also be reached via email if you're old skool _(click the links to copy the addresses; gotta keep the spam bots on their toes)_:
 
-- [My encrypted email](mailto:hi@zachfette.rs)
-- [My not-so-encrypted email](mailto:zachary.fetters@yahoo.com)
+<a href="#" class="email-copy" data-email-prefix="aGk=" data-email-suffix="emFjaGZldHRlLnJz" alt="hi at zachfette dot r s">My encrypted email</a>
+
+<a href="#" class="email-copy" data-email-prefix="emFjaGFyeS5mZXR0ZXJz" data-email-suffix="eWFob28uY29t" alt="zachary dot fetters at yahoo dot com">My not-so-encrypted email</a>
 
 *psst... To keep your messages safe, use my public key before sending to my encrypted email:*
 
