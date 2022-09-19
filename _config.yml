@@ -16,10 +16,17 @@ defaults:
   -
     scope:
       path: _posts
-      type: posts
+      type: post
     values:
       permalink: /post/:year/:month/:day/:title
       layout: post
+  -
+    scope:
+      path: _drafts
+      type: draft
+    values:
+      permalink: /draft/:year/:month/:day/:title
+      layout: draft
 
 future              : true
 source              : .

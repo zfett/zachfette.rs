@@ -20,12 +20,12 @@
         <main id="site-content">
             <h1>Archive</h1>
             {% assign postCount = site.posts | size %}
-            {% assign currentdate = post.date | date: "%Y" %}
-            {% assign date = currentdate %} 
+            {% assign date = currentdate %}
 
             {% if postCount > 0 %}
 
             {% for post in site.posts %}
+            {% assign currentdate = post.date | date: "%Y" %}
             {% if currentdate != date %}
                 <h2 id="y{{currentdate}}">{{ currentdate }}</h2>
             {% endif %}
